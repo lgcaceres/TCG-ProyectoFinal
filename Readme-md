@@ -1,0 +1,52 @@
+# Trazado del recorrido de objetos utilizando YOLO
+> Este proyecto consiste en identificar a la personas que aparecen en una escena, luego se procede
+a marcar su recorrido mediante puntos. Este trabajo se presento para el curso de Tópicos en computación gráfica. UNSA- Arequipa
+
+
+## Integrantes
+* **Luis Gustavo Cáceres Zegarra**
+
+
+## Introducción
+> El primer paso de este proyecto consiste aplicar un framework llamado YOLO (You Only Look Once), este paper fue presentado
+en el 2016, es un detector de objetos que utiliza un enfoque de grids para paralelizar las convoluciones. Luego mediante regresión
+ detecta la posición en las que se encunetran los objetos.
+
+> Luego se modificó parte de su estrctura para que pueda ser capaz de detectar solo objetos en movimiento. YOLO una vez que detecta
+un objeto lo enmarca en un bounding box, el cual se utiliza para poder dterminar su trayectoria. 
+
+## Data
+
+> El video con el que se probó, fue grabado solo para fines prácticos. La locación es la UNSA.
+
+## Ejecución
+* Primero se deben de descargar los pesos del siguiente link:
+https://pjreddie.com/media/files/yolo.weights
+
+* Clonar el repositorio
+* Una ves dentro de la carpeta principal ejecutar el siguiente comando:
+ ./darknet detector demo -prefix <nombredetag-cualquiera> cfg/coco.data cfg/yolo.cfg yolo.weights nombredevideo.mp4.
+* Se generara un archivo con el nombre del video con la extensión .txt.
+* Finalmente plotear en archivo nombredevideo.mp4.txt utilizando GNUplot. 
+
+
+## Especificaciones de la maquina que se uso
+> 22 GB RAM
+> core i7
+> 1 TeraByte de disco duro
+> Tarjeta Nvidia de 970mx de 3GB  
+
+## Implementado con
+* CUDA
+* Darknet
+* Lenguaje de Programación C
+* gnuplot(Para ploteo de los puntos)
+
+
+## Aplicaciones 
+
+  * En video vigilancia.
+  * Detección de acciones anómalas
+  
+## Referencia:
+Paper: https://pjreddie.com/darknet/yolo/
