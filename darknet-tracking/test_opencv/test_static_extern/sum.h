@@ -1,0 +1,2 @@
+
+int myfoo(int,int);

@@ -1,0 +1,24 @@
+Descargar pesos del siguiente link
+
+$ wget https://pjreddie.com/media/files/yolo.weights
+
+
+$ git clone --branch pollobranch https://github.com/luigy-mach/darknet.git darknet-pollo
+
+
+
+para ejecutar
+
+$ cd darknet-pollo
+$ make
+$ ./darknet detector demo -prefix <nombredetag-cualquiera> cfg/coco.data cfg/yolo.cfg yolo.weights nombredevideo.mp4
+
+
+tienes q estar en la misma carpeta donde se encuentra el archivo "nombredevideo.mp4.txt"
+este se genera dentro de "darknet-pollo"
+
+$ gnuplot
+
+> plot "nombredevideo.mp4.txt"
+
+se incluyen las comillas
