@@ -1,9 +1,9 @@
 #include "mytracking_obj.h"
 
-void myTrackingObj_create(tracking_obj** obj){
+void myTrackingObj_create(tracking_obj** obj1){
   tracking_obj* temp = (tracking_obj*)malloc(sizeof(tracking_obj));
   myTrackingObj_init_create(temp);
-  (*obj)=temp;
+  (*obj1)=temp;
   return;
 }
 

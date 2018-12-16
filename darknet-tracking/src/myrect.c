@@ -1,11 +1,9 @@
-
 #include "myrect.h"
 
-
-void myPoint_create(point** pp){
+void myPoint_create(point** _p){
 	point* temp = (point*)malloc(sizeof(point));
 	myPoint_init_create(temp);
-	(*pp) = temp;
+	(*_p) = temp;
 	return;
 }
 
