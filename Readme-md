@@ -1,6 +1,6 @@
 # Trazado del recorrido de objetos utilizando YOLO
 > Este proyecto consiste en identificar a la personas que aparecen en una escena, luego se procede
-a marcar su recorrido mediante puntos. Este trabajo se presento para el curso de Tópicos en computación gráfica. UNSA- Arequipa
+a marcar su recorrido mediante puntos. Este trabajo se presento para el curso de Seminario de Tesis UNSA- Arequipa
 
 
 ## Integrantes
@@ -12,7 +12,7 @@ a marcar su recorrido mediante puntos. Este trabajo se presento para el curso de
 en el 2016, es un detector de objetos que utiliza un enfoque de grids para paralelizar las convoluciones. Luego mediante regresión
  detecta la posición en las que se encunetran los objetos.
 
-> Luego se modificó parte de su estrctura para que pueda ser capaz de detectar solo objetos en movimiento. YOLO una vez que detecta
+> Luego se modificó parte de su estructura para que pueda ser capaz de detectar solo objetos en movimiento. YOLO una vez que detecta
 un objeto lo enmarca en un bounding box, el cual se utiliza para poder dterminar su trayectoria. 
 
 ## Data
