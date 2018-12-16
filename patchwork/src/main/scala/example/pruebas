@@ -1,0 +1,12 @@
+ val epsilon = Array(5.0, 5.0)
+  val minPts = 1
+  val minCellInCluster = 8
+  val ratio = 0.0
+
+
+  val epsilon = Array(6.0, 6.0)
+  val minPts = 1
+  val minCellInCluster = 30
+  val ratio = 0.0
+
+
